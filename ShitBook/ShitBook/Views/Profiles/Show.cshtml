@@ -1,0 +1,17 @@
+@{
+  Layout = "_Layout";
+}
+
+
+
+@using ShitBook.Models;
+
+<h1>About @Model["user"]._name</h1>
+
+<p>Birthday: @Model["profile"].BirthDate</p>
+<p>Home City: @Model["profile"].HomeCity</p>
+<p>Age: @Model["profile"].Age</p>
+<button type ="button" name="button"><a href ='/profile/@Model["profile"].Id/edit'>Edit</a></button>
+<p><a class="btn btn-default btn-lg" role = "button" href='/user/@Model["user"].GetId()/profile/new'>Add new profile</a></p>
+<p><a class="btn btn-default btn-lg" role = "button" href='/user'>Return to Users</a></p>
+}

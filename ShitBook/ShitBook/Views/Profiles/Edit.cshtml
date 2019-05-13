@@ -1,0 +1,14 @@
+@{
+  Layout = "_Layout";
+}
+<form action="/user/@Model["user"].GetId()/profile/@Model["profile"].Id" method="post">
+  <label for="newBirth">Birthdate</label>
+  <input id="newBirth" name="newBirth" type="date">
+  <label for='newHome'>Home City</label>
+  <input id='newHome' name='newHome' type='text'>
+  <label for='newName'>Name</label>
+  <input id='newName' name='newName' type='text'>
+  <label for='newAge'>Age</label>
+  <input id='newAge' name='newAge' type='number'>
+  <button type="submit">Edit</button>
+</form>

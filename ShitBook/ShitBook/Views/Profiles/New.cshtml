@@ -1,0 +1,16 @@
+@{
+  Layout = "_Layout";
+}
+<form action='/user/@Model.Id/profile' method='post'>
+  <input id='userId' name='userId' type='hidden' value='@Model.Id'>
+    <label for="birthDate">Birthdate</label>
+    <input id="birthDate" name="birthDate" type="date">
+    <label for='homeCity'>Home City</label>
+    <input id='homeCity' name='homeCity' type='text'>
+    <label for='name'>Name</label>
+    <input id='name' name='name' type='text'>
+    <label for='age'>Age</label>
+    <input id='age' name='age' type='number'>
+    <button type='submit'>Save Info</button>
+
+  </form>

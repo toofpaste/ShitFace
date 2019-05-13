@@ -1,0 +1,14 @@
+@{
+  Layout = "_Layout";
+}
+
+@using ShitBook.Models;
+
+@foreach(About about in Model)
+{
+<h1><a href='/profile/@about.GetId()'>About @about.GetName()</a></h1>
+}
+
+
+<p><a class="btn btn-default btn-lg" role = "button" href='/user'>Return to Users</a></p>
+<a  href="/">Home</a>
